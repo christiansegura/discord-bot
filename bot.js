@@ -33,8 +33,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'Pong!'
                 });
             break;
+            case 'array': 
+                bot.sendMessage({ 
+                    to: channelID, 
+                    message: JSON.stringify(args) 
+                });
+            break;
             // Just add any case commands if you want to..
-            //no further work required as this was just a short intro tutorial
          }
      }
 });
