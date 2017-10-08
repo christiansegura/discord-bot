@@ -34,7 +34,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
             break;
             // Just add any case commands if you want to..
-            //review commands in api and begin to formulate responses
+            //no further work required as this was just a short intro tutorial
          }
      }
 });
